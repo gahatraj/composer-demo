@@ -37,4 +37,4 @@ jobs:
         uv run ruff check . --exit-zero --select=E,F,W,C90 --line-length=127 --config "lint.mccabe.max-complexity = 10" --statistics
 
     - name: Test with pytest
-      run: uv run pytest --suppress-no-test-exit-code
+      run: uv run pytest
